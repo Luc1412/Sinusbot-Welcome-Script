@@ -79,10 +79,6 @@ registerPlugin({
             } else {
                 ev.client.chat(config.verified_message)
             }
-        } else if (ev.text.toLowerCase() === '!init') {
-            config.verified_clients = [];
-            config.joined_clients = [];
-            engine.saveConfig(config)
         }
     });
 
